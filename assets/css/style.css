@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: .5s;
+}
+
+header nav{
+    height: 13vh;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    column-gap: 3vh;
+    transition: .5s;
+}
+
+header nav ul img{
+    width: 10vh;
+    transition: .5s;
+}
+
+header nav ul a{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.2vh;
+    transition: .5s;
+}
+
+header nav ul a.btn{
+    background-color: #ad8b3a;
+    padding: 1.5vh 3vh;
+    font-size: 2vh;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.change{
+    background-color: whitesmoke;  
+}
+
+.change nav{
+    height: 10vh;
+}
+
+.change nav ul a{
+    color: #ad8b3a;
+}
+
+.change nav ul img{
+    filter: brightness(0%);
+}
+
+.change nav ul a.btn{
+    background-color: #ad8b3a;
+    color: whitesmoke;
+    padding: 1.5vh 3vh;
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+/* banner-container css starts from here */
+
+.banner-container{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-container video{
+    height: 100%;
+}
+
+.banner-container::before{
+    content:"";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.297);
+    position: absolute;
+}
+
+/* celebrate-container CSS STARTS  from here */
+
+.celebrate-container{
+    height: 120vh;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 13vh 30vh;
+    text-align: center;
+}
+
+.celebrate-container .cel-content{
+    height: 22vh;
+    margin-bottom: 5vh;
+}
+
+.celebrate-container h2{
+    font-size: 6vh;
+}
+
+.celebrate-container p{
+    font-size: 2.5vh;
+}
+
+.celebrate-container .celebrate-row{
+    height: 65vh;
+    background-image: url(../images/taj.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.celebrate-container .celebrate-row .col{
+    height: 100%;
+    width: 25%;
+    border: 0.2vh solid red;
+    background-color: rgba(0, 0, 0, 0.358);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.celebrate-container .celebrate-row .col:hover{
+    opacity: 1;
+}
